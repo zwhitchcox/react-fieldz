@@ -1,15 +1,23 @@
 {
   "devDependencies": {
+    "@testing-library/react": "^9.3.0",
+    "@types/jest": "^24.0.19",
     "expect": "^24.9.0",
-    "tezt": "^1.1.0"
+    "jest": "^24.9.0",
+    "react": "^16.10.2",
+    "tezt": "^1.1.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
   },
   "name": "react-fieldz",
   "description": "",
   "version": "0.0.1",
   "main": "dist/lib.js",
-  "dependencies": {},
+  "dependencies": {
+    "fieldz": "^0.0.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/zwhitchcox/react-fieldz/issues"
   },
-  "homepage": "https://github.com/zwhitchcox/react-fieldz#readme"
+  "homepage": "https://github.com/zwhitchcox/react-fieldz#readme",
+  "peerDependencies": {
+    "react": "^16.8.x"
+  }
 }
