@@ -3,6 +3,7 @@
     "target": "es2015",
     "module": "commonjs",
     "outDir": "dist",
+    "lib": ["es2019", "dom"],
     "sourceMap": true,
     "noEmitOnError": true,
     "moduleResolution": "node",
@@ -18,6 +19,6 @@
     "lib.ts"
   ],
   "include": [
-    "**/*.test.ts"
+    "**/*.test.tsx", "enzyme.tes.tsx"
   ],
 }

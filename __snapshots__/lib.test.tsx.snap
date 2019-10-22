@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+<DocumentFragment>
+  <form>
+    <div>
+      Error: []
+    </div>
+    <div>
+      Error: ["Error: value must be hello!"]
+    </div>
+    <div>
+      <label
+        for="firstName"
+      >
+        First Name
+      </label>
+      <input
+        aria-label="firstName"
+        id="firstName"
+        name="firstName"
+        value="Zane"
+      />
+    </div>
+    <div>
+      <label
+        for="customField"
+      >
+        Custom Field
+      </label>
+      <input
+        aria-label="customField"
+        id="customField"
+        name="customField"
+        value="helo"
+      />
+    </div>
+  </form>
+</DocumentFragment>
+`;
+
+exports[`it works 2`] = `
+<DocumentFragment>
+  <form>
+    <div>
+      Error: []
+    </div>
+    <div>
+      Error: []
+    </div>
+    <div>
+      <label
+        for="firstName"
+      >
+        First Name
+      </label>
+      <input
+        aria-label="firstName"
+        id="firstName"
+        name="firstName"
+        value="Zane"
+      />
+    </div>
+    <div>
+      <label
+        for="customField"
+      >
+        Custom Field
+      </label>
+      <input
+        aria-label="customField"
+        id="customField"
+        name="customField"
+        value="hello"
+      />
+    </div>
+  </form>
+</DocumentFragment>
+`;

@@ -1,10 +1,17 @@
 {
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.1.2",
     "@testing-library/react": "^9.3.0",
+    "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.19",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
     "expect": "^24.9.0",
     "jest": "^24.9.0",
-    "react": "^16.10.2",
+    "jsdom": "^15.2.0",
+    "jsdom-global": "^3.0.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "tezt": "^1.1.0",
     "ts-jest": "^24.1.0",
     "typescript": "^3.6.4"
@@ -14,7 +21,8 @@
   "version": "0.0.1",
   "main": "dist/lib.js",
   "dependencies": {
-    "fieldz": "^0.0.2"
+    "fieldz": "^0.1.0",
+    "validatorz": "^2.3.3"
   },
   "scripts": {
     "test": "jest"
