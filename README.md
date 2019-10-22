@@ -31,7 +31,7 @@ const camelToTitle = camelCase => camelCase
     .replace(/^./g, match => match.toUpperCase())
     .trim()
 
-const TestForm = () => {
+const Form = () => {
   const [{actions, fieldsState}, setFieldsState] = useFieldz(fieldProperties)
   const {setValue, setValues, setTouched, resetField, resetFields } = actions
 
@@ -40,7 +40,11 @@ const TestForm = () => {
       {Object.entries(fieldsState)
         .map(([fieldName, {errors, value, touched, pristine}]) => (
           <div key={fieldName}>
-            {(touched && errors.length) ? <span className="input-error">{errors.map(err => <div>{err.toString()}</div>)}</span> : ""}
+            {(touched && errors.length) ?
+              <span className="input-error">
+                {errors.map(err => <div>{err.toString()}</div>)}
+              </span> : ""
+            }
             <label htmlFor={fieldName}>{camelToTitle(fieldName)}</label>
             <input
               name={fieldName}
