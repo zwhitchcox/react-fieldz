@@ -4,9 +4,9 @@
 
 It provides the `useFieldz` react hook, which simply wraps [`fieldz`](https://npmjs.org/fieldz) in React's useState.
 
-Please see [`fieldz`](https://npmjs.org/fieldz) for more detail.
+Please see [`fieldz`](https://npmjs.org/fieldz) for more detail on the api.
 
-### Example Useage
+### Example Usage
 
 ```ts
 const fieldProperties = {
